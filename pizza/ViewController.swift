@@ -9,7 +9,26 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
+    var pizza : MiPizza = MiPizza()
+    
+    @IBAction func seleccionChica(sender: AnyObject) {
+        self.pizza.tamaño = TamañoPizza.chica
+    }
+    
+    @IBAction func seleccionMediana(sender: AnyObject) {
+        self.pizza.tamaño = TamañoPizza.mediana
+    }
+    
+    @IBAction func seleccionGrande(sender: AnyObject) {
+        self.pizza.tamaño = TamañoPizza.grande
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        let siguienteVista = segue.destinationViewController as! SeleccionMasa
+        siguienteVista.pizza = self.pizza
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.

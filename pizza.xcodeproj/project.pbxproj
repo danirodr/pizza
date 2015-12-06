@@ -7,14 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		65D40C161C14C12700B2AED1 /* SolicitudPedido.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65D40C151C14C12700B2AED1 /* SolicitudPedido.swift */; };
 		65FE48581C1449B900FADB79 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65FE48571C1449B900FADB79 /* AppDelegate.swift */; };
 		65FE485A1C1449B900FADB79 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65FE48591C1449B900FADB79 /* ViewController.swift */; };
 		65FE485D1C1449B900FADB79 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65FE485B1C1449B900FADB79 /* Main.storyboard */; };
 		65FE485F1C1449B900FADB79 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 65FE485E1C1449B900FADB79 /* Assets.xcassets */; };
 		65FE48621C1449B900FADB79 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65FE48601C1449B900FADB79 /* LaunchScreen.storyboard */; };
+		65FE486A1C144F7900FADB79 /* MiPizza.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65FE48691C144F7900FADB79 /* MiPizza.swift */; };
+		65FE48741C14572A00FADB79 /* SeleccionMasa.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65FE48731C14572A00FADB79 /* SeleccionMasa.swift */; };
+		65FE48761C145B7A00FADB79 /* SeleccionQueso.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65FE48751C145B7A00FADB79 /* SeleccionQueso.swift */; };
+		65FE48781C1462C700FADB79 /* SeleccionIngredientes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65FE48771C1462C700FADB79 /* SeleccionIngredientes.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		65D40C151C14C12700B2AED1 /* SolicitudPedido.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SolicitudPedido.swift; sourceTree = "<group>"; };
 		65FE48541C1449B900FADB79 /* pizza.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = pizza.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		65FE48571C1449B900FADB79 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		65FE48591C1449B900FADB79 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +28,10 @@
 		65FE485E1C1449B900FADB79 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		65FE48611C1449B900FADB79 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		65FE48631C1449B900FADB79 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		65FE48691C144F7900FADB79 /* MiPizza.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MiPizza.swift; sourceTree = "<group>"; };
+		65FE48731C14572A00FADB79 /* SeleccionMasa.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SeleccionMasa.swift; sourceTree = "<group>"; };
+		65FE48751C145B7A00FADB79 /* SeleccionQueso.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SeleccionQueso.swift; sourceTree = "<group>"; };
+		65FE48771C1462C700FADB79 /* SeleccionIngredientes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SeleccionIngredientes.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,9 +67,14 @@
 				65FE48571C1449B900FADB79 /* AppDelegate.swift */,
 				65FE48591C1449B900FADB79 /* ViewController.swift */,
 				65FE485B1C1449B900FADB79 /* Main.storyboard */,
+				65D40C151C14C12700B2AED1 /* SolicitudPedido.swift */,
+				65FE48771C1462C700FADB79 /* SeleccionIngredientes.swift */,
 				65FE485E1C1449B900FADB79 /* Assets.xcassets */,
 				65FE48601C1449B900FADB79 /* LaunchScreen.storyboard */,
 				65FE48631C1449B900FADB79 /* Info.plist */,
+				65FE48691C144F7900FADB79 /* MiPizza.swift */,
+				65FE48731C14572A00FADB79 /* SeleccionMasa.swift */,
+				65FE48751C145B7A00FADB79 /* SeleccionQueso.swift */,
 			);
 			path = pizza;
 			sourceTree = "<group>";
@@ -136,6 +151,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				65FE48781C1462C700FADB79 /* SeleccionIngredientes.swift in Sources */,
+				65FE48761C145B7A00FADB79 /* SeleccionQueso.swift in Sources */,
+				65FE486A1C144F7900FADB79 /* MiPizza.swift in Sources */,
+				65FE48741C14572A00FADB79 /* SeleccionMasa.swift in Sources */,
+				65D40C161C14C12700B2AED1 /* SolicitudPedido.swift in Sources */,
 				65FE485A1C1449B900FADB79 /* ViewController.swift in Sources */,
 				65FE48581C1449B900FADB79 /* AppDelegate.swift in Sources */,
 			);
@@ -285,6 +305,7 @@
 				65FE48681C1449B900FADB79 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
