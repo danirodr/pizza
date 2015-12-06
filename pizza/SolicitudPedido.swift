@@ -17,6 +17,20 @@ class SolicitudPedido: UIViewController {
     @IBOutlet weak var datosIngredientes: UILabel!
     @IBOutlet weak var listaIngredientes: UILabel!
     
+    @IBAction func confirmar(sender: AnyObject) {
+        let refreshAlert = UIAlertController(title: "Confirmar pedido", message: "¿Desea confirmar el pedido de la pizza?", preferredStyle: UIAlertControllerStyle.Alert)
+        
+        refreshAlert.addAction(UIAlertAction(title: "Si", style: .Default, handler: { (action: UIAlertAction!) in
+            print("Handle Ok logic here")
+        }))
+        
+        refreshAlert.addAction(UIAlertAction(title: "No", style: .Default, handler: { (action: UIAlertAction!) in
+            print("Handle Cancel Logic here")
+        }))
+        
+        presentViewController(refreshAlert, animated: true, completion: nil)
+    }
+    
     override func viewWillAppear(animated: Bool) {
         self.datosTamaño.text = "Tamaño: \(self.pizza.tamaño.rawValue)"
         self.datosMasa.text = "Masa: \(self.pizza.masa.rawValue)"
