@@ -35,6 +35,17 @@ class MiPizza: NSObject {
     var ingredientes: String
     var numeroIngredientes :Int
     
+    var tieneJamon : Bool = false
+    var tienePepperoni : Bool = false
+    var tienePavo : Bool = false
+    var tieneSalchicha : Bool = false
+    var tieneAceituna : Bool = false
+    var tieneCebolla : Bool = false
+    var tienePimiento: Bool = false
+    var tienePiña: Bool = false
+    var tieneAnchoa: Bool = false
+    var tieneTomate: Bool = false
+    
     override init() {
         self.tamaño = TamañoPizza.mediana
         self.masa = MasaPizza.crujiente
